@@ -8,6 +8,10 @@ body {
   font-size: 1.6rem;
   margin: 0;
   line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Colors */
@@ -20,6 +24,7 @@ body {
   --stone900: hsl(24, 5%, 18%);
 
   --brown: hsl(14, 45%, 36%);
+  --soft-beige: hsl(30, 54%, 90%);
 
   --rose800: hsl(332, 51%, 32%);
   --rose50: hsl(330, 100%, 98%);
@@ -56,6 +61,22 @@ strong {
 }
 
 /* Layout */
+.card {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.picture {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
 
 section {
   border-bottom: 1px solid var(--stone150);
@@ -68,20 +89,25 @@ section:last-of-type {
   border-bottom: none;
 }
 
-.picture {
-  width: 100vw;
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 .preparation {
   background-color: var(--rose50);
-  padding: 1.6rem;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .preparation ul ::marker {
   color: var(--rose800);
+}
+
+ul,
+ol {
+  padding-left: 2rem;
+  list-style-position: outside;
+}
+
+ul li,
+ol li {
+  padding-left: 1rem;
 }
 
 .instructions ol ::marker,
@@ -89,11 +115,53 @@ section:last-of-type {
   color: var(--brown);
 }
 
+.nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.nutrition tr {
+  border-bottom: 1px solid var(--stone150);
+}
+
+.nutrition tr:last-child {
+  border-bottom: none;
+}
+
 .nutrition th {
+  text-align: center;
+  font-weight: 400;
   color: var(--stone600);
+  padding: 0.8rem 0;
 }
 
 .nutrition td {
+  text-align: left;
   color: var(--brown);
   font-weight: 700;
+  padding: 0.8rem 0;
+}
+
+@media (min-width: 768px) {
+  .picture {
+    max-width: 50rem;
+    max-height: 40rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 60rem;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  body {
+    background-color: var(--soft-beige);
+    padding: 2rem;
+  }
 }
