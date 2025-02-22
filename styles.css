@@ -6,7 +6,8 @@ html {
 body {
   font-family: "Outfit", serif;
   font-size: 1.6rem;
-  margin: 3rem;
+  margin: 0;
+  line-height: 1.4;
 }
 
 /* Colors */
@@ -43,14 +44,35 @@ h3 {
   font-size: 2.4rem;
 }
 
-p {
+p,
+li {
   color: var(--stone600);
   font-weight: 400;
+  line-height: 1.6;
+}
+
+strong {
+  font-weight: 700;
 }
 
 /* Layout */
+
+section {
+  border-bottom: 1px solid var(--stone150);
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+section:first-of-type,
+section:last-of-type {
+  border-bottom: none;
+}
+
 .picture {
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .preparation {
@@ -58,11 +80,12 @@ p {
   padding: 1.6rem;
 }
 
-.preparation ul {
+.preparation ul ::marker {
   color: var(--rose800);
 }
 
-.instructions ol {
+.instructions ol ::marker,
+.ingredients ul ::marker {
   color: var(--brown);
 }
 
