@@ -11,7 +11,6 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -19,10 +18,12 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [GitHub pages link](https://github.com/Tbehrends4587/SocialLinksProfile)
-- Live Site URL: [GitHub repo](https://tbehrends4587.github.io/SocialLinksProfile/)
+- Solution URL: [GitHub pages link](https://github.com/Tbehrends4587/RecipePage)
+- Live Site URL: [GitHub repo](https://tbehrends4587.github.io/RecipePage/)
 
 ## My process
+
+I start with HTML and try to think how it should look. Then I start styling in CSS, putting color variables and typograhy first. I always use a mobile first approach as it is easier to make it that way. I then work on layouts which ends up taking the longest. Little tweaks til it looks right and BAM its done. 
 
 ### Built with
 
@@ -33,22 +34,11 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
+I leaned a lot with this one. I got reintroduced to tables and ordered lists. The ::marker property was a new one for me and it is really cool because it allows for more style options. I liked the bottom border for styling and it was fun to implement. 
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
+I think I will continue to work on using elements like bottom borders and ::marker to style lists. I also want to continue to work on my CSS skills and make sure I am using the best practices. I would like to make these elements that I could just drop into a project randomly but I have to learn how to use more generic html classes that I can style. 
 
 ## Author
 
@@ -57,5 +47,5 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Thank you to me for continuing to learn more and more. I am excited to continue to grow as a developer. 
 
